@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ludotech
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/upv
+#    username: postgres
+    username: upv-back
+#    password: postgres
+    password: upv
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    change-log: classpath:db/changelog-master.yml
+    enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
