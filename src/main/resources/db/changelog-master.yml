@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: changelog/000_table_users.xml
+      relativeToChangelogFile: true
+  - include:
+      file: changelog/001_table_book.xml
+      relativeToChangelogFile: true
+  - include:
+      file: changelog/002_book_year_to_int.xml
+      relativeToChangelogFile: true

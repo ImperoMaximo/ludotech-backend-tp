@@ -3,11 +3,11 @@ spring:
     name: ludotech
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/upv
+    url: jdbc:postgresql://localhost:5432/ludotech
 #    username: postgres
-    username: upv-back
+    username: devuser
 #    password: postgres
-    password: upv
+    password: devuser
     driver-class-name: org.postgresql.Driver
 
   liquibase:
